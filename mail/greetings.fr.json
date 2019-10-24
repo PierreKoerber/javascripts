@@ -1,0 +1,15 @@
+{
+    'greetings':[
+        "En espérant avoir répondu à vos attentes, nous vous prions d’agréer, Monsieur, nos meilleures salutations.",
+        "Meilleures salutations.",
+        "Cordialement,",
+        "Merci,"
+    ],
+    'greeting_forms':[
+        "Monsieur",
+        "Madame",
+        "Mademoiselle",
+        "Madame, Monsieur",
+        "Mesdames, Messieurs"
+    ]
+}
