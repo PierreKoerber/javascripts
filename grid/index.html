@@ -155,8 +155,8 @@ Vue.component('grid',{
         pagesize:10,
         currentpage:0,
         sorts:[],
-        filters:["","","","","",""],
-        showsearch:false,
+        filters:[],
+        showsearch:true,
         urledit:"",
         urlshow:""
         }
@@ -185,19 +185,28 @@ Vue.component('grid',{
     },
     computed:{
         pageitems(){
-        //    its.filter(word => word.length > 6);
+        
+            
             var its = this.items ;
-            var filter = ["firstname","lastname"] ;
-           // for(var i =0;i<this.filters.length;i++){
-                its = its.filter(  function(item){
-                    console.log(item.firstname) ;
-                    if (item.firstname.toLowerCase().includes("pierre") )
-                        return true ;
-                    return false ;
-                } ) ;
-            //}
 
-             its = this.items.slice(this.currentpage * this.pagesize, this.currentpage * this.pagesize + this.pagesize) ;
+            // sort the items
+
+            // do the filters
+            var filter = ["firstname","lastname"] ;
+
+            // loop the filter
+            for(var i =0;i<this.filters.length;i++){
+               
+                function doesContain(fieldname, value, item) {
+                    return item[fieldname].toLowerCase().includes( value.toLowerCase() ) ;
+                }
+                var fieldname = filter[i] ;
+                var value = this.filters[i] ;
+                its = its.filter(  doesContain.bind(this, fieldname, value) );
+            }
+
+            // get the page size
+            its = its.slice(this.currentpage * this.pagesize, this.currentpage * this.pagesize + this.pagesize) ;
             return its ;
         },
         pagenumbers(){
