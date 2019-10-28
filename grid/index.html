@@ -185,9 +185,19 @@ Vue.component('grid',{
     },
     computed:{
         pageitems(){
-            let its = this.items.slice(this.currentpage * this.pagesize, this.currentpage * this.pagesize + this.pagesize) ;
         //    its.filter(word => word.length > 6);
+            var its = this.items ;
+            var filter = ["firstname","lastname"] ;
+           // for(var i =0;i<this.filters.length;i++){
+                its = its.filter(  function(item){
+                    console.log(item.firstname) ;
+                    if (item.firstname.toLowerCase().includes("pierre") )
+                        return true ;
+                    return false ;
+                } ) ;
+            //}
 
+             its = this.items.slice(this.currentpage * this.pagesize, this.currentpage * this.pagesize + this.pagesize) ;
             return its ;
         },
         pagenumbers(){
@@ -221,7 +231,7 @@ Vue.component('grid',{
              <tr v-if="showsearch">
                 <th>  </th>  
                 <th> <input type="text" v-model="filters[0]"></th>
-                <th></th>
+                <th> <input type="text" v-model="filters[1]"></th>
                 <th></th>
                 <th></th>
                 <th></th>
