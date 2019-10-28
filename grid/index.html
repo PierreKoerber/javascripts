@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>ECA - Utilisateurs </title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+
+	<link href="https://www.eca-vaud.ch/templates/eca/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+	<link rel="icon" type="image/png" href="https://www.eca-vaud.ch/templates/eca/img/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="https://www.eca-vaud.ch/templates/eca/img/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="https://www.eca-vaud.ch/templates/eca/img/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="https://www.eca-vaud.ch/templates/eca/img/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="https://www.eca-vaud.ch/templates/eca/img/favicon-16x16.png" sizes="16x16">
+
+
+	<link rel="stylesheet" href="/extdpre/camac/build/layout.css" type="text/css" />
+
+	    <style>
+
+.myjumbotron {
+    padding-right: 60px;
+    padding-left: 60px;
+    border-radius: 6px;
+    
+    margin-top: 5px;
+    border: 1px solid #e5e5e5;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eee;
+}
+
+
+</style>
+
+
+</head>
+<body class="">
+	<div id="wrapper">
+
+		<div class="header-wrapper">
+	<header>
+		<!-- ECA MENU TOP -->
+		<div class="header-top" style="display:none">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-right" style="margin-left:25px;">
+						<ul class="header-top-menu">
+							&nbsp;
+							<ul class="nav menu">
+								<li class="item">
+									<a target="_blank" href="http://www.eca-vaud.ch">Accès au site de l&#039;ECA</a>
+								</li>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="BigHeader container" style="display:none">
+			<div class="col-xs-4 col-md-2 col-sm-2" >
+				<a  href="/extdpre/camac/" >
+					<img class="img-responsive" src="https://www.eca-vaud.ch/templates/eca/img/logos/eca-logo-footer.svg" alt="ECA" width="156" style="margin-left:-15px;">
+				</a>
+			</div>
+
+
+												<div id="UserNav" class="col-xs-8 col-sm-10 col-md-10 text-right padding-right0">
+	<span class="hidden-sm hidden-xs">Utilisateur : &nbsp;</span>
+	<i class="fa fa-user" style="color:#E42834"></i> &nbsp; pierre.koerber@eca-vaud.ch &nbsp;
+
+	</div>
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only">Navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+<div class="row col-xs-10 visible-xs" >
+		<h3 class="margin-top15">	<i class="fa fa-lock" style=""></i>
+		Utilisateurs</h3>
+</div>
+							
+		</div>
+
+		
+							<!-- ECA MAIN MENU -->
+<nav id="navbar-main" class="navbar navbar-inverse divider" >
+
+	<div class="container" style="max-width:1250px;">
+
+		<div id="navbar" class="collapse navbar-collapse ">
+			<ul class="nav navbar-nav VisibleOnNav">
+				<li class="col-sm-3 hidden-xs " style="padding-left: 0;">
+					<a id="miniLogoURL" style="display:none" class="VisibleOnNav hidden-sm" href="/extdpre/camac/" >
+						<img id="logo" class="VisibleOnNav img-responsive  hidden-sm" src="/extdpre/camac/build/images/eca-logo--234x90.png" alt="Logo ECA header">
+					</a>
+					<h1 style="">
+				<i class="fa fa-lock"></i> Utilisateurs
+					</h1>
+				</li>
+
+				        
+          <li class=""><a href="/extdpre/camac/">Accueil</a></li>
+      <li class=""><a href="/extdpre/camac/nouveau">Nouveau</a></li>
+      <li class=""><a href="/extdpre/camac/formulaires/">Formulaires</a></li>
+
+          <li class=""><a href="/extdpre/camac/admin/">Administration</a></li>
+      <li class="active"><a href="/extdpre/camac/user/">Utilisateurs</a></li>
+      <li class=""><a href="/extdpre/camac/graph">Graph</a></li>
+    
+
+
+
+
+				<li class="VisibleOnNav hidden-xs hidden-sm">
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="bottom" title="Mon Compte" data-html="true" data-trigger='focus'
+					data-content="<i id='fa-user-min' class='fa fa-user'></i> &nbsp; <p id='user-min-text'>pierre.koerber@eca-vaud.ch</p> " style="outline: none; ">
+	          <i class="fa fa-user"></i>
+	          </a>
+				</li>
+			</ul>
+		</div><!--/.nav-collapse -->
+		<i class="minimize fa fa-angle-up center-block hidden-xs"></i>
+	</div>
+</nav>
+					</header>
+</div>
+
+		<div class="container">
+			
+
+			<div>
+				    <h1>Liste des utilisateurs</h1>
+
+    <div id="myapp">
+
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+
+var items = [{"id":1,"firstname":"xxxx","lastname":"xx","office":"xxx","email":"pierre.moire@externe.eca-vaud.ch","passwordRequestedAt":{"date":"2019-10-25 13:03:00.000000","timezone_type":3,"timezone":"Europe\/Paris"},"lastlogin":{"date":"2019-10-21 15:11:00.000000","timezone_type":3,"timezone":"Europe\/Paris"},"enabled":false},{"id":2,"firstname":"","lastname":"","office":"","email":"pierre.koerber@eca-vaud.ch","passwordRequestedAt":null,"lastlogin":{"date":"2019-10-25 13:01:03.000000","timezone_type":3,"timezone":"Europe\/Paris"},"enabled":true},{"id":3,"firstname":"","lastname":"","office":"","email":"guillaume.benis@eca-vaud.ch","passwordRequestedAt":null,"lastlogin":{"date":"2019-10-22 08:31:28.000000","timezone_type":3,"timezone":"Europe\/Paris"},"enabled":true},{"id":4,"firstname":"Jos","lastname":"De Almeida","office":"","email":"jose.de-almeida@eca-vaud.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":5,"firstname":"Didier","lastname":"Guignard","office":"","email":"didier.guignard@eca-vaud.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":9,"firstname":"Dominique","lastname":"Perrin","office":"","email":"dominique.perrin@eca-vaud.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":10,"firstname":"Fran","lastname":"Iff","office":"","email":"francois.iff@eca-vaud.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":11,"firstname":"Thomas","lastname":"Baeriswyl","office":"Services techniques","email":"thomas.baeriswyl@rolle.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":12,"firstname":"Toni","lastname":"Schroeter","office":"","email":"toni.schroeter@payerne.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":13,"firstname":"Alain","lastname":"Brasey","office":"police du feu","email":"alain.brasey@lausanne.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":14,"firstname":"Serge","lastname":"Stehl","office":"SDIS","email":"sst@ylb.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":16,"firstname":"Jean","lastname":"Palmieri","office":"Urbanisme et Environnement P","email":"jean.palmieri@pully.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":18,"firstname":"Bernard","lastname":"Mischler","office":"Bureau technique","email":"bernard.mischler@epalinges.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":20,"firstname":"Marcel","lastname":"Martin","office":"","email":"martin23@bluewin.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":21,"firstname":"natacha","lastname":"zurich","office":"","email":"natacha.zurich@romanel-sur-lausanne.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":22,"firstname":"Yves-Marc","lastname":"ANDRE","office":"Direction Patrimoine","email":"yae@morges.ch","passwordRequestedAt":{"date":"2019-10-25 14:39:28.000000","timezone_type":3,"timezone":"Europe\/Paris"},"lastlogin":null,"enabled":true},{"id":23,"firstname":"Mario","lastname":"Gheza","office":"","email":"technicien.communal@gryon.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":24,"firstname":"Kevin","lastname":"Adamina","office":"Ville de Morges - Patrimoine","email":"kaa@morges.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":25,"firstname":"Pierre-Alain","lastname":"Martenet","office":"Service urbanisme","email":"pierre.alain.martenet@ollon.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":26,"firstname":"Jos","lastname":"Sanchez","office":"Ville de Gland","email":"j.sanchez@gland.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":27,"firstname":"Thierry","lastname":"Cachin","office":"Commune de Blonay - Urbanisme et travaux","email":"tcachin@blonay.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":28,"firstname":"Franco","lastname":"Cetrangolo","office":"Administration","email":"franco.cetrangolo@eclpens.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":29,"firstname":"st","lastname":"auer","office":"","email":"stephane.auer@romanel-sur-lausanne.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":30,"firstname":"Anne-Marie","lastname":"Piguet","office":"Direction du Patrimoine","email":"anne-marie.piguet@morges.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":31,"firstname":"Alexandre","lastname":"Guillet","office":"Urbanisme et Constructions","email":"alexandre.guillet@prilly.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":32,"firstname":"Jonathan","lastname":"Remund","office":"Commune d'Orbe","email":"jonathan.remund@orbe.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":33,"firstname":"Jacques","lastname":"Liaudet","office":"Service de l'urbanisme","email":"jacques.liaudet@crissier.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":34,"firstname":"Roan","lastname":"Vallat","office":"Service technique communal","email":"roan.vallat@penthalaz.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":35,"firstname":"Christophe","lastname":"Cotting","office":"Service de l'urbanisme, de la police des constructions et des infrastructures (SUPCI)","email":"c.cotting@st-prex.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":36,"firstname":"pierre-andr","lastname":"zuber","office":"service technique communal","email":"pierr-andre.zuber@bex.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":37,"firstname":"Alex","lastname":"Negro","office":"Bureau Technique","email":"bt@st-legier.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":39,"firstname":"G","lastname":"Ducommun","office":"DUCOMMUN G","email":"gerald@menuiserie-ducommun.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":40,"firstname":"St","lastname":"Ecuyer","office":"Municipal des b","email":"Stephane.Ecuyer@epfl.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":41,"firstname":"Anne-Marie","lastname":"Dick","office":"","email":"greffe@givrins.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":42,"firstname":"St","lastname":"Baudat","office":"Commune de Treycovagnes","email":"treycovagnes@bluewin.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":43,"firstname":"Jean-Marie","lastname":"Crausaz","office":"Crausaz","email":"jmcrausaz@bluewin.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":45,"firstname":"Carlos","lastname":"Castro","office":"Bureau technique","email":"carlos.castro@grandson.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":46,"firstname":"Pierre-Yves","lastname":"Baumann","office":"Service technique","email":"technique@cudrefin.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":47,"firstname":"Isabelle","lastname":"Lucas Sauterel","office":"bureau technique communal","email":"technique@servion.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":50,"firstname":"Victor","lastname":"Fiadeiro","office":"Service technique communal de Bercher","email":"service.technique@bercher-vd.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":51,"firstname":"Didier","lastname":"Buchilly","office":"Direction des travaux","email":"didier.buchilly@lutry.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":52,"firstname":"Pierre-Andr","lastname":"Girardin","office":"","email":"pierre-andre.girardin@netplus.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":53,"firstname":"Charles","lastname":"Wernuss","office":"Service Technique Intercommunal du Gros de Vaud","email":"charles.wernuss@echallens.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":54,"firstname":"Amina","lastname":"Ould Henia","office":"Ville de Prilly","email":"amina.ouldhenia@prilly.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":55,"firstname":"Mme Merz","lastname":"renens","office":"","email":"catherine.merz@renens.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":57,"firstname":"yan","lastname":"wenger","office":"service de l'urbanisme","email":"yan.wenger@prilly.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":58,"firstname":"Catherine","lastname":"Bolomey","office":"Service Technique Intercommunal du Gros-de-Vaud","email":"catherine.bolomey@echallens.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":59,"firstname":"Walter","lastname":"Pillon","office":"","email":"walter.pillon@eca-vaud.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":60,"firstname":"Fran","lastname":"ARN","office":"Urbanisme","email":"francois.arn@nyon.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":62,"firstname":"Ren","lastname":"Jomini","office":"Ville de Morges","email":"rene.jomini@morges.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":64,"firstname":"Fabienne","lastname":"Berclaz","office":"commune de Morges","email":"fabienne.berclaz@morges.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":65,"firstname":"Pierre","lastname":"Mermoud","office":"Service Technique Communal","email":"pierre.mermoud@cossonay.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":66,"firstname":"Karim","lastname":"SAHRAOUI","office":"Service de la s","email":"karim.sahraoui@aigle.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":67,"firstname":"Karlen","lastname":"Fran","office":"Admistration communale","email":"francois.karlen@rougemont.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":68,"firstname":"Jean-Michel","lastname":"Isoz","office":"travaux","email":"jean-michel.isoz@chateaudoex-admin.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":69,"firstname":"Carine","lastname":"Neyroud","office":"Commune de Blonay - SUT","email":"cneyroud@blonay.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":70,"firstname":"Elise","lastname":"Glatt","office":"Administration Communale","email":"elise.glatt@prilly.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":71,"firstname":"Mary-jo","lastname":"david","office":"Ribt Yvonand","email":"mary-jo.david@yvonand.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":73,"firstname":"koerber","lastname":"pierre","office":"Pierre Koerber","email":"pierre.koerber@gmail.com","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":74,"firstname":"Maryline","lastname":"Rubattel","office":"Urbanisme","email":"urbanisme@b-e-l.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":75,"firstname":"St","lastname":"Rochat","office":"Bureau Technique","email":"btc@chenit.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":79,"firstname":"Jorge","lastname":"Pezuela","office":"Commune de Cossonay, Service technique","email":"jorge.pezuela@cossonay.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":80,"firstname":"Jean-Pascal","lastname":"Saam","office":"Service technique communal","email":"jean-pascal.saam@commune-avenches.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":81,"firstname":"Fr","lastname":"Deillon","office":"service technique","email":"service-technique@cugy-vd.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":82,"firstname":"Francis","lastname":"Voumard","office":"Service des b","email":"francis.voumard@lemontsurlausanne.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":83,"firstname":"Corinne","lastname":"Rapin","office":"Bureau technique","email":"constructions@corcelles.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":84,"firstname":"Nadine","lastname":"Forestier","office":"Service technique","email":"technique@belmont.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":85,"firstname":"Fran","lastname":"Julia","office":"Commune d'Onnens","email":"f.julia@onnens.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":86,"firstname":"David","lastname":"Sanz","office":"SDIS Nyon-D","email":"d.sanz@sdis-nyon-dole.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":88,"firstname":"Christophe","lastname":"Flipo","office":"Commune de Leysin","email":"Christophe.Flipo@leysin.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":89,"firstname":"Philippe","lastname":"Coeytaux","office":"Administration communale - Service Urbanisme - travaux - Voirie","email":"phcoeytaux@chavannes.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":90,"firstname":"Claire","lastname":"Wieland","office":"Commune de Sainte-Croix","email":"claire.wieland@sainte-croix.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":91,"firstname":"V","lastname":"Widmer","office":"Administration communale","email":"greffe@belmont-sur-yverdon.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":92,"firstname":"Eric","lastname":"Dumauthioz","office":"SIS Morget","email":"eric.dumauthioz@morges.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":93,"firstname":"Tatjana","lastname":"Manganiello","office":"Services techniques","email":"travaux@aubonne.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":95,"firstname":"Cipriano","lastname":"Nerga","office":"Service Urbanisme et Constructions","email":"Cipriano.Nerga@prilly.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":96,"firstname":"St","lastname":"Dubuis","office":"Urbanisme et travaux","email":"stephane.dubuis@la-tour-de-peilz.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":98,"firstname":"Anne-Marie","lastname":"Viret Grasset","office":"Greffe municipal","email":"greffe@chexbres.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":100,"firstname":"Herve","lastname":"Martinez","office":"Bureau technique intercommunal","email":"h.martinez@b-t-i.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":101,"firstname":"Frederic","lastname":"Savoy","office":"","email":"f.savoy@b-t-i.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":108,"firstname":"Fabrizio","lastname":"Verasani","office":"Direction de l architecture","email":"fabrizio.verasani@vevey.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":109,"firstname":"Thomas","lastname":"Ruedin","office":"SUPCI","email":"t.ruedin@st-prex.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":110,"firstname":"Alain","lastname":"Mathys","office":"Bureau technique","email":"a.mathys@moudon.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":112,"firstname":"Sylvie","lastname":"Goy","office":"","email":"sylvie.goy@jouxtens-mezery.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":113,"firstname":"Sacha","lastname":"Hirschi","office":"","email":"employe.communal@onnens.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":116,"firstname":"Jose Manuel","lastname":"Sanchez Parada","office":"Commune de Cheseaux-sur-Lausanne","email":"jose.sanchez@cheseaux.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":117,"firstname":"Jean-Marc","lastname":"Zeller","office":"Commune de Villeneuve","email":"zellerjm@villeneuve.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":119,"firstname":"Luc-Andr","lastname":"Gillieron","office":"Service de lUrbanisme","email":"luc-andre.gillieron@ecublens.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":120,"firstname":"David","lastname":"Conde","office":"Service technique","email":"david.conde@saint-sulpice.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":121,"firstname":"Vincenzo","lastname":"Rizzi","office":"Commune de Blonay","email":"vrizzi@blonay.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":123,"firstname":"Vitalia","lastname":"Torny","office":"Commune de Montpreveyres","email":"admin@montpreveyres.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":124,"firstname":"Jean-Marc","lastname":"Chanson","office":"service de urbanisme","email":"jean-marc.chanson@montreux.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":126,"firstname":"Jean-Daniel","lastname":"Luthi","office":"","email":"info@osci-tech.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":127,"firstname":"Paul","lastname":"Chevallier","office":"","email":"paul.chevallier@eca-vaud.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":128,"firstname":"Salah","lastname":"Allaoui","office":"Bureau technique","email":"salah.allaoui@lutry.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":131,"firstname":"technique","lastname":"Bureau","office":"Commune de Sainte-Croix","email":"bureau.technique@sainte-croix.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":132,"firstname":"Olivier","lastname":"Brodard","office":"Administration communale","email":"voyer@gryon.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":135,"firstname":"Nicolas","lastname":"Golay","office":"Police des Constructions","email":"nicolas.golay@renens.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":136,"firstname":"Jo","lastname":"Badini","office":"","email":"j.badini@chavornay.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":137,"firstname":"Cathleen","lastname":"Arnaud","office":"ECA","email":"cathleenarnaud@hotmail.fr","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":138,"firstname":"Claudine","lastname":"Christe","office":"Support aux communes","email":"claudine.christe@eca-vaud.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":139,"firstname":"Valerie","lastname":"Jacquemettaz","office":"SECU Chantier  Habitation Sarl","email":"secuchantier.ch@gmail.com","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":141,"firstname":"Dominique","lastname":"Pythoud","office":"Service technique communal","email":"service.technique@lasarraz.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":142,"firstname":"Damien","lastname":"Gu","office":"Damien Gu","email":"dguelat@bussigny.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":143,"firstname":"Elise","lastname":"Bodin","office":"","email":"elise.bodin@eca-vaud.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":144,"firstname":"Luc","lastname":"Gindroz","office":"Courdesse  Associes","email":"gindroz@courdesse-associes.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":145,"firstname":"Nathalie","lastname":"Juarez","office":"","email":"njuarez@noville.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":146,"firstname":"Commune de","lastname":"Maracon","office":"Bureau communal","email":"commune.maracon@bluewin.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":147,"firstname":"Iria","lastname":"Gomez","office":"Service de l urbanisme developpement et mobilite","email":"iria.gomez@crissier.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":149,"firstname":"Joanne","lastname":"Tissot","office":"Urbanisme - Police des constructions","email":"jti@ylb.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":150,"firstname":"Grand","lastname":"Gary","office":"Test","email":"gary.grand@eca-vaud.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":152,"firstname":"Roan","lastname":"Vallat","office":"Bureau technique","email":"rvallat@st-legier.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":153,"firstname":"Alexandre","lastname":"Turrian","office":"Service technique","email":"a.turrian@preverenges.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":155,"firstname":"Michel","lastname":"Desseigne","office":"Commune de Vallorbe","email":"mdesseigne@vallorbe.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":163,"firstname":"Nathan","lastname":"Finkelstein","office":"","email":"n.finkelstein@tannay.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":164,"firstname":"Cynthia","lastname":"Bonzon","office":"Service urbanisme commune Crissier","email":"cynthia.bonzon@crissier.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":167,"firstname":"Mentor","lastname":"Citaku","office":"Mentor Citaku","email":"admin@lavey.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":169,"firstname":"Dominique","lastname":"Morisod","office":"administration","email":"morisod.dominique@lavey.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":171,"firstname":"Herve","lastname":"Nicola","office":"Service Technique","email":"herve.nicola@paudex.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":173,"firstname":"manuela","lastname":"peikert","office":"Ville de Vevey - Urbanisme - police des constructions","email":"manuela.peikert@vevey.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":175,"firstname":"Etienne","lastname":"PECLARD","office":"Police du feu SPSL","email":"etienne.peclard@lausanne.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":177,"firstname":"Anne-Marie","lastname":"Duport","office":"Anne-Marie Duport","email":"amaduport@gmail.com","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":179,"firstname":"Olivier","lastname":"Dupertuis","office":"","email":"technique@pomy.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":180,"firstname":"Cedric","lastname":"Bersier","office":"Commune de Faoug","email":"cedric.bersier@awarchitecture.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":181,"firstname":"Christian","lastname":"Gillieron","office":"Services techniques Aubonne","email":"christian.gillieron@aubonne.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":182,"firstname":"Laurent","lastname":"Beauverd","office":"Police des constructions","email":"lbeauverd@bussigny.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":187,"firstname":"jean-marc","lastname":"schlaeppi","office":"Commune dEtoy","email":"jean-marc.schlaeppi@lausanne.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":193,"firstname":"Murielle","lastname":"Vesin","office":"Greffe","email":"greffe@lussy-sur-morges.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":194,"firstname":"Lionel","lastname":"Chuard","office":"","email":"lionel.chuard@vevey.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":195,"firstname":"Marcel","lastname":"Martin","office":"Commune de Rossinire","email":"travaux@rossiniere.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":196,"firstname":"Gilles","lastname":"Bichsel","office":"Gilles Bichsel","email":"gilles.bichsel@pompaples.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true},{"id":198,"firstname":"Giuseppe","lastname":"Giuliano","office":"","email":"g.giuliano@archi3.ch","passwordRequestedAt":null,"lastlogin":null,"enabled":true}] ;
+
+  
+
+Vue.component('grid',{
+    props:{
+        items:Array
+    },
+    data(){
+    return{
+        page:0,
+        pagesize:10,
+        currentpage:0,
+        sorts:[],
+        filters:["","","","","",""],
+        showsearch:false,
+        urledit:"",
+        urlshow:""
+        }
+    },
+    methods:{
+        next:function(){
+            this.currentpage++ ;
+        },
+        previous:function(){
+            this.currentpage-- ;
+        },
+        first:function(){
+            this.currentpage = 0 ;
+        },
+        last:function(){
+            this.currentpage = this.pagenumbers-1 ;
+        },
+        addsort(col){
+            this.sorts.push(col) ;
+        },
+        resetfilters(){
+
+        }
+    },
+    mounted(){
+    },
+    computed:{
+        pageitems(){
+            let its = this.items.slice(this.currentpage * this.pagesize, this.currentpage * this.pagesize + this.pagesize) ;
+        //    its.filter(word => word.length > 6);
+
+            return its ;
+        },
+        pagenumbers(){
+            return Math.ceil(  this.items.length / this.pagesize ) ;
+        }
+
+    },
+    template:
+
+    `
+<div>
+{{sorts}}
+{{filters}}
+
+     <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th></th> 
+                <th>Prénom <button v-on:click="addsort('firstname')">sort</button></th>
+                <th>Nom    <button v-on:click="addsort('lastname')">sort</button></th>
+                <th>Bureau</th>
+                <th>Email</th>
+                <th>Actif ?</th>
+                <th>Réinit.</th>
+                <th>Dernière conn.</th>
+                <th>Actions
+                     <button v-on:click="showsearch = !showsearch">filtre</button>
+                </th>
+            </tr>
+
+             <tr v-if="showsearch">
+                <th>  </th>  
+                <th> <input type="text" v-model="filters[0]"></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+        <tr v-for="(item,index) in pageitems">
+            <td>  
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            </td>
+            <td> {{item.firstname}}</td>
+            <td> {{item.lastname}}</td>
+            <td> {{item.officel}}</td>
+            <td> {{item.email}}</td>
+            <td> {{item.enabled}} ?</td>
+            <td> {{item.passwordRquestedAt}}.</td>
+            <td> {{item.lastLogin}} </td>
+            <td>
+                <button>Voir</button>
+                <button>Editer</button>
+            </td>
+        </tr>
+
+        </tbody>
+    </table>
+
+      
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <button class="btn btn-default" v-on:click="first"  :disabled="currentpage ==0">
+        <span class="glyphicon glyphicon-step-backward" aria-hidden="true" ></span>
+    </button>
+    <button class="btn btn-default"  v-on:click="previous()" :disabled="currentpage==0">
+        <span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+    </button>
+
+    <div class="pull-right">
+       <span ng-cloak> Page  {{this.currentpage+1}}  de {{pagenumbers}}</span>
+       <span class="badge">  {{items.length}} </span>
+    </div>
+
+    <button class="btn btn-default" v-on:click="next" :disabled="currentpage==pagenumbers">
+        <span class="glyphicon glyphicon-forward" aria-hidden="true"></span>
+    </button>
+    <button class="btn btn-default" v-on:click="last()" :disabled="currentpage==pagenumbers" >
+        <span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+    </button>
+
+   <select style="display: inline-block;"  class="xform-control" v-model="pagesize" v-on:change="currentpage=0;">
+       <option value=10>10</option>
+       <option value=20>20</option>
+       <option value=50>50</option>
+       <option value=100>100</option>
+       <option value=200>200</option>
+   </select>
+
+   <div class="spacer"></div>
+   <div class="spacer"></div>
+   <label></label>
+
+
+  </div>
+</nav>
+
+</div>
+    `
+}) ;
+
+
+var app = new Vue({
+   
+    el:"#myapp",
+    data(){
+        return {
+            items:items
+            
+        }
+    },
+    mounted(){
+    
+    },
+    methods:{
+                   
+    },
+    template:
+    `
+    <div>
+        <grid :items="items"></grid>
+    </div>
+    `
+}) ;
+console.log(app) ;
+Vue.config.devtools = true
+  
+</script>
+  
+			</div>
+	    </div>
+
+	</div>
+	  
+
+		
