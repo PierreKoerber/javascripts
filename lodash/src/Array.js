@@ -1,5 +1,19 @@
+
 Array.prototype.tostring = function(){
     return "array size=" + this.length ;
+} ;
+
+Array.explode = function(s,sep=","){
+    this = s.split(sep) ;
+} ;
+ 
+Array.prototype.implode = function(sep=","){
+    var ret ="" ;
+    for(var i=0;i<this.length;i++){
+        if (typeof this[i] === 'string' || this[i] instanceof String )
+            ret = ret + sep + this[i] ;
+    }
+    return ret ;
 } ;
 
 Array.prototype.filterfield=function(name,value,algo=0){

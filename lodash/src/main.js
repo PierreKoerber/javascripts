@@ -13,3 +13,10 @@ console.log( data.filterfield("first_name", "Ch",1).filterfield("last_name","c",
 console.log("---------------------") ;
 
 //console.log( data.filterfield( ["first_name","last_name"], ["Ch","c"],1)) ;
+
+
+var x = ["this", "is", "a", "sentence"] ;
+
+console.log( x.implode("-") ) ;
+
+var y = "bonjour,les,amis,yeah"
