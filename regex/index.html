@@ -42,21 +42,38 @@
     </div>
 
 
+    <textarea id="texte" name="comment" form="usrform">Enter text here...
+        ATTESTATION D'ASSURANCE Case postale 61 1009 Pully 0842 277 872 www.assura.ch Assuré : Date de naissance : N° AVS : Police n° : Mode de paiement : Pierre Körber 21.09.1970 756.1784.5398.63 1 721 277 Trimestriel Agence n° : Agent n° : 1 624 301 Catégories d'assurances Monsieur Pierre Körber Route des Rappes 56 1921 Martigny-Croix Spécifications Couverture des accidents Primes mensuelles brutes PHARMED (valable jusqu'au 01.01.20) Assurance obligatoire des soins Modèle alternatif avec médecin de famille et liste de pharmacies agréées Franchise de fr. 2500.-- non 2 0 8 .6 0 MEDECIN DE FAMILLE Assurance obligatoire des soins modèle "médecin de famille" Franchise de fr. 300.-- non 3 5 1 .8 0 Assurance selon la LAMal Entrée en vigueur de la police : 01.01.2015 (valable dès le 01.01.20) Subside cantonal éventuel non déduit Nous attestons garantir à la personne susnommée des prestations au moins équivalentes à celles prévues par les dispositions légales en vigueur. Assura-Basis SA R. Bodenmann Directeur général D. Bonadei Directeur Pully, le Primes mensuelles sans rabais pour paiement semestriel ou annuel ATTT0302 (11.09) 23.12.2019
+
+    </textarea>
+
 </body>
 
 
 <script>
+    function print(s) {
+        document.write("<br>" + s);
+    }
     var text = "salut les gars je suis né le 21.09.1970. yes";
 
 
     const re = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/
-
-    const re = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/
+    const re2 = /(?<day>\d{2}).(?<month>\d{2}).(?<year>\d{4})/g
+        // const re = /(?<year>\d{4})-(?<month>\d{2})-(?<day>\d{2})/
     const result = re.exec('2015-01-02')
 
-    var res = re.exec(text);
 
-    document.write(result);
+    const res2 = re2.exec(text);
+    print(result);
+    print(res2);
+
+    var txt = document.getElementById("texte").value;
+    const res3 = re2.exec(txt);
+    print(res3);
+
+    const res4 = txt.match(re2);
+
+    print(res4);
 </script>
 
 </html>
