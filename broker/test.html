@@ -1,8 +1,12 @@
 
 
-<script src="helper.js"></script>
+<script src="../lodash/src/String.js"></script>
 
 
 <script>
-    test1() ;
+
+    var str = "La propriété function.name est une propriété en lecture seule qui renvoie le nom de la fonction courante ou  si celle-ci a été créée de façon anonyme." ;
+
+   console.log(str.slug() ) ;
+   console.log(str.slug("**")) ;
 </script>
