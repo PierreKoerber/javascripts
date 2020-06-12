@@ -1,11 +1,56 @@
 
-Array.prototype.tostring = function(){
-    return "array size=" + this.length ;
+    
+Array.prototype.removeString=function(o){
+    const index = this.indexOf(o);
+    if (index > -1) this.splice(index, 1);
 } ;
 
-Array.explode = function(s,sep=","){
+Array.prototype.copy = function(sourceArray){
+  
+    for (var i = 0; i < sourceArray.length; i++) {
+         this.push({...sourceArray[i]}) ;
+         console.log(this) ;
+    }
+} ;
+
+Array.prototype.isInArray = function(obj){
+    for (var i = 0; i < this.length; i++) {
+         if( this[i] == obj){
+            console.log("equal", obj,  this[i]) ;
+            return true ;
+         }
+    }
+    return false ;
+} ;
+
+Array.prototype.removeObject = function(obj){
+    var index = [] ;
+    for (var i = 0; i < this.length; i++) {
+         if( this[i] == obj){
+             index.push(i) ;
+         }
+    }
+
+    for(var i =0;i<index.length;i++){
+        this.splice(index[i],1) ;
+    }
+
+    return false ;
+} ;
+
+
+Array.prototype.explode = function(s,sep=","){
     this = s.split(sep) ;
 } ;
+
+Array.prototype.containsObject = function(obj) {
+    for (var i = 0; i < list.length; i++) {
+        if (list[i] == obj) {
+            return true;
+        }
+    }
+    return false;
+}
  
 Array.prototype.implode = function(sep=","){
     var ret ="" ;

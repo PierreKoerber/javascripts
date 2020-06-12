@@ -1,12 +1,40 @@
 
 
 <script src="./src/String.js"></script>
-
-
+<script src="./src/Array.js"></script>
 <script>
-
     var str = "La propriété function.name est une propriété en lecture seule qui renvoie le nom de la fonction courante ou  si celle-ci a été créée de façon anonyme." ;
 
-   console.log(str.slug() ) ;
-   console.log(str.slug("**")) ;
+    console.log(str.slug() ) ;
+    console.log(str.slug("**")) ;
+
+    var obj = {
+        name:"pierre",
+        lastname:"koerber"
+    } ;
+
+    var obj2 = {
+        name:"pierre",
+        lastname:"koerber"
+    } ;
+
+    Array.prototype.xtostring = function(){
+        console.log("TEST") ;
+    } ;
+    Array.prototype.containsObject = function(obj) {
+        for (var i = 0; i < this.length; i++) {
+            if (this[i] == obj) {
+                return true;
+            }
+        }
+        return false;
+    } ;
+    var arr = new Array() ;
+
+    arr.push(obj) ;
+
+    console.log(arr) ;
+    console.log("contains", arr.containsObject(obj)) ;
+    console.log("contains", arr.containsObject(obj2)) ;
+
 </script>
