@@ -1,16 +1,15 @@
 {
-  "name": "nodepdf",
+  "name": "pdfUtilities",
   "version": "1.0.0",
-  "description": "node pdf index",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": "https://github.com/PierreKoerber/javascripts.git",
+  "author": "Pierre Koerber <pierre.koerber@eca-vaud.ch>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^5.14.0",
+    "webpack-cli": "^4.3.1"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "pdf-parse": "^1.1.1",
-    "pdf.js": "^0.1.0",
-    "pdfjs-dist": "^2.2.228"
+    "lodash": "^4.17.20"
   }
 }
