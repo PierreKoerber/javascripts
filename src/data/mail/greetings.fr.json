@@ -1,9 +1,17 @@
 {
     'greetings':[
         "En espérant avoir répondu à vos attentes, nous vous prions d’agréer, Monsieur, nos meilleures salutations.",
+        "En restant à ta disposition, meilleures salutations.",
+        "Bien à vous",
+        "Merci pour ton support, Salutations",
         "Meilleures salutations.",
         "Cordialement,",
-        "Merci,"
+        "Merci,",
+        "Bonne fin de journée",
+        "Merci pour votre aide et meilleures salutations,",
+        "Merci,",
+        "Salutations,",
+        "Belle fin de journée à vous. Cordiales salutations"
     ],
     'greeting_forms':[
         "Monsieur",
